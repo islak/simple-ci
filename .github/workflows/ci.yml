@@ -26,3 +26,7 @@ jobs:
 
     - name: Run script
       run: python main.py
+    
+    - name: Run tests
+      run: |
+        python -m unittest discover
