@@ -27,9 +27,9 @@ jobs:
     - name: Run script
       run: python main.py
     
-    - name: Run tests with coverage
+    - name: Run API tests with coverage
       run: |
-        coverage run -m unittest discover
+        coverage run -m unittest discover -s . -p "test_*.py"
         coverage report
         coverage html
         
